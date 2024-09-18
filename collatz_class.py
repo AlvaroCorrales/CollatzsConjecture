@@ -1,13 +1,13 @@
-#%% CREATE CLASS TO COMPUTE THE SEQUENCE ARISING FROM COLLATZ'S CONJECTURE
+# CREATE CLASS TO COMPUTE THE SEQUENCE ARISING FROM COLLATZ'S CONJECTURE
 # Alvaro Corrales Cano
 # January 2020
 # For more info about Collatz's conjecture: https://en.wikipedia.org/wiki/Collatz_conjecture
 
-#%% Import required libraries
+# Import required libraries
 import numpy as np
 import matplotlib.pyplot as plt
 
-#%% Define class
+# Define class
 # We'll assign two methods: we can either just calculate the sequence or calculate the sequence and plot it
 
 class Collatz:
@@ -186,7 +186,7 @@ class Collatz:
         return np.asarray(max_number)
                                
     
-#%%Test
+#Test
 #seq_test = Collatz([454, 8090]).sequence(plot = True)
 #stop_test = Collatz([235, 345, 982]).stopping_times()
 #stop_test = Collatz(list(range(1, 1000000, 1))).stopping_times(plot = 'hist', bins = 200)       
